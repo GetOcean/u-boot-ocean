@@ -1,0 +1,4 @@
+bootargs=console=ttyS0,115200 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait
+aload_script=fatload mmc 0 0x49000000 script.bin;
+aload_kernel=fatload mmc 0 0x46000000 uImage; bootm 0x46000000 - 0x49000000;
+uenvcmd=setenv verify no; run aload_script aload_kernel

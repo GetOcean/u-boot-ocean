@@ -1,0 +1,105 @@
+#
+# (C) Copyright 2012 Henrik Nordstrom <henrik@henriknordstrom.net>
+#
+# Based on some other board Makefile
+#
+# (C) Copyright 2000-2003
+# Wolfgang Denk, DENX Software Engineering, wd@denx.de.
+#
+# SPDX-License-Identifier:	GPL-2.0+
+#
+obj-y	+= board.o
+obj-$(CONFIG_SUNXI_GMAC)	+= gmac.o
+obj-$(CONFIG_A10_MID_1GB)	+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_A10_OLINUXINO_LIME)	+= dram_a10_olinuxino_lime.o
+obj-$(CONFIG_A10S_OLINUXINO_MICRO)	+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_A13_OLINUXINO)	+= dram_a13_olinuxino.o
+obj-$(CONFIG_A13_OLINUXINO_MICRO)	+= dram_a13_olinuxino_micro.o
+obj-$(CONFIG_A20_OLINUXINO_LIME)	+= dram_a20_olinuxino_lime.o
+obj-$(CONFIG_A20_OLINUXINO_LIME2)	+= dram_a20_olinuxino_lime2.o
+obj-$(CONFIG_A20_OLINUXINO_MICRO)	+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_AINOL_AW1)		+= dram_ainol_aw1.o
+obj-$(CONFIG_AMPE_A76)		+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_AUXTEK_T003)	+= dram_auxtek_t003.o
+obj-$(CONFIG_AUXTEK_T004)	+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_BA10_TV_BOX)	+= dram_sun4i_384_1024_iow8.o
+obj-$(CONFIG_COBY_MID7042)	+= dram_sun4i_408_1024_iow16.o
+obj-$(CONFIG_COBY_MID8042)	+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_COBY_MID9742)	+= dram_sun4i_408_1024_iow16.o
+obj-$(CONFIG_MARSBOARD_A10)	+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_MARSBOARD_A20)	+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_CUBIEBOARD)	+= dram_cubieboard.o
+obj-$(CONFIG_CUBIEBOARD2)	+= dram_sun7i_480_1024_iow16.o
+obj-$(CONFIG_BANANAPI)		+= dram_sun7i_432_1024_iow16.o
+obj-$(CONFIG_CUBIETRUCK)	+= dram_cubietruck.o
+obj-$(CONFIG_DNS_M82)		+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_EOMA68_A10)	+= dram_sun4i_360_1024_iow8.o
+obj-$(CONFIG_EOMA68_A20)	+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_EU3000)		+= dram_eu3000.o
+obj-$(CONFIG_FORFUN_Q88DB)	+= dram_forfun_q88db.o
+obj-$(CONFIG_GOOSEBERRY_A721)	+= dram_gooseberry_a721.o
+obj-$(CONFIG_H6)		+= dram_sun4i_360_1024_iow16_emr1_4.o
+obj-$(CONFIG_HACKBERRY)		+= dram_hackberry.o
+obj-$(CONFIG_HBD_MID_S906)	+= dram_sun7i_432_1024_iow16.o
+obj-$(CONFIG_HCORE_HC860)	+= dram_sun4i_384_1024_iow16.o
+obj-$(CONFIG_HSG_H702)		+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_HYUNDAI_A7)	+= dram_sun4i_360_512.o
+obj-$(CONFIG_A7HD)		+= dram_sun4i_360_1024_iow8.o
+obj-$(CONFIG_I12_TVBOX)		+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_ICOU_FATTY_I)	+= dram_icou_fatty_i.o
+obj-$(CONFIG_INTERRA3)		+= dram_mk802ii_a20.o
+obj-$(CONFIG_INET_86VS)		+= dram_inet_86vs.o
+obj-$(CONFIG_INET_86VZ)		+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_INET_3FBT)		+= dram_sun4i_360_1024_iow16_emr1_4.o
+obj-$(CONFIG_INET97F_II)	+= dram_sun4i_408_512.o
+obj-$(CONFIG_INET_K70HC)	+= dram_inet_k70hc.o
+obj-$(CONFIG_ITEADA10)		+= dram_cubieboard.o
+obj-$(CONFIG_ITEADA20)		+= dram_sun7i_480_1024_iow16.o
+obj-$(CONFIG_JESURUN_Q5)	+= dram_sun4i_312_1024_iow8.o
+obj-$(CONFIG_K1001L1C)		+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_KURIO_7S)		+= dram_sun7i_432_1024_iow16.o
+obj-$(CONFIG_LANGCENT_H6S)	+= dram_sun7i_360_512_busw16_iow16.o
+obj-$(CONFIG_LINKSPRITE_PCDUINO3)	+= dram_linksprite_pcduino3.o
+obj-$(CONFIG_MEFAFEIS_A08)	+= dram_megafeis_a08.o
+obj-$(CONFIG_MELE_A1000)	+= dram_sun4i_360_512.o
+obj-$(CONFIG_MELE_A1000G)	+= dram_sun4i_360_1024_iow8.o
+obj-$(CONFIG_MELE_A210)		+= dram_sun5i_432_512_busw16_iow16.o
+obj-$(CONFIG_MELE_A3700)	+= dram_sun4i_360_1024_iow8.o
+obj-$(CONFIG_MELE_M5)		+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_MERRII_HUMMINGBIRD_A20)	+= dram_sun7i_480_1024_iow16.o
+obj-$(CONFIG_MINI_X)		+= dram_sun4i_360_512.o
+obj-$(CONFIG_MINI_X_1GB)	+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_MINI_X_A10S)	+= dram_mini_x_a10s.o
+obj-$(CONFIG_MK802)		+= dram_sun4i_360_512.o
+obj-$(CONFIG_MK802_1GB)		+= dram_sun4i_360_1024_iow16.o
+obj-$(CONFIG_MK802_A10S)	+= dram_mk802_a10s.o
+obj-$(CONFIG_MK802II)		+= dram_sun4i_408_1024_iow8.o
+obj-$(CONFIG_MK802II_A20)	+= dram_mk802ii_a20.o
+obj-$(CONFIG_MK808C_A20)	+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_MSI_PRIMO73)	+= dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_OLIMEX_A13_SOM)	+= dram_sun5i_408_512_busw16_iow16.o
+obj-$(CONFIG_OLIMEX_A20_SOM)    += dram_sun7i_384_1024_iow16.o
+obj-$(CONFIG_PCDUINO)		+= dram_sun4i_408_1024_iow8.o
+obj-$(CONFIG_PENGPOD700)	+= dram_sun4i_384_1024_iow8.o
+obj-$(CONFIG_PENGPOD1000)	+= dram_sun4i_408_1024_iow16.o
+obj-$(CONFIG_PINERIVER-H25)	+= dram_sun5i_408_1024_iow16.o
+obj-$(CONFIG_POV_TAB_P703)	+= dram_pov_tab_p703.o
+obj-$(CONFIG_POV_PROTAB2)	+= dram_pov_protab2.o
+obj-$(CONFIG_POV_PROTAB2_XXL)	+= dram_pov_protab2_xxl.o
+obj-$(CONFIG_PRESTIGIO_PMP3670B)	+= dram_sun5i_408_512_busw16_iow16.o
+obj-$(CONFIG_QT840A)		+= dram_sun7i_384_512_busw16_iow16.o
+obj-$(CONFIG_R7DONGLE)		+= dram_r7dongle.o
+obj-$(CONFIG_SANEI_N90)		+= dram_sanei_n90.o
+obj-$(CONFIG_SEMITIME_G2)	+= dram_semitime_g2.o
+obj-$(CONFIG_T702A)		+= dram_sun4i_360_512.o
+obj-$(CONFIG_TXCZ_A20)		+= dram_txcz_a20.o
+obj-$(CONFIG_TZX_Q8_713B6)	+= dram_sun5i_408_512_busw16_iow8.o
+obj-$(CONFIG_TZX_Q8_713B7)	+= dram_sun5i_408_512_busw16_iow8.o
+obj-$(CONFIG_UHOST_U1A)		+= dram_sun4i_360_1024_iow8.o
+obj-$(CONFIG_WEXLER_TAB_7200)	+= dram_wexler_tab_7200.o
+obj-$(CONFIG_WOBO_I5)		+= dram_wobo_i5.o
+obj-$(CONFIG_XZPAD700)		+= dram_xzpad700.o
+obj-$(CONFIG_YBKJ_A20_JN)	+= dram_ybkj_a20_jn.o
+obj-$(CONFIG_YONESTOPTECH_BD1078)	+= dram_yonestoptech_bd1078.o
+obj-$(CONFIG_ZATAB)		+= dram_zatab.o
+obj-$(CONFIG_MERRII_M2)		+= dram_merrii_m2.o
